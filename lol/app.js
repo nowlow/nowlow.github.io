@@ -6,9 +6,14 @@ document.getElementById('start').addEventListener('click', (event) => {
         audio: false
     }, function (stream) {
         let emmiter = document.getElementById('emitter-video')
+        let source = new MediaSource(stream, {type: 'video/mp4'})
+        let url = URL.createObjectURL(source)
+
+        console.log(source)
+        console.log(url)
 
         try {
-            emmiter.srcObject = stream;
+            emmiter.srcObject = stream
         } catch (error) {
             emmiter.src = window.URL.createObjectURL(stream);
         }
