@@ -1,0 +1,18 @@
+{
+  "name": "flip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "two.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.lithium.paris:2222/naoufel/Panzoom-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  }
+}
